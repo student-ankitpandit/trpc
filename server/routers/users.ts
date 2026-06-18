@@ -24,6 +24,10 @@ export const userRouter = t.router({
     onUpdate: t.procedure.subscription(() => {
       return observable<string>(emit => {
         eventEmitter.on("update", emit.next)
+
+        return () => {
+          eventEmitter.off("update", emit.next  )
+        }
       })
     })
 });
