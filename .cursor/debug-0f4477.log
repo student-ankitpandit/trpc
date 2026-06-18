@@ -1,0 +1,5 @@
+{"sessionId":"0f4477","location":"client.tsx:main","message":"Client calling users.getUser","data":{"url":"http://localhost:8000/trpc","path":"users.getUser"},"timestamp":1781726761242,"hypothesisId":"C-D"}
+{"sessionId":"0f4477","location":"client.tsx:error","message":"Client call failed","data":{"errorName":"TRPCClientError","errorMessage":"No procedure found on path \"users.getUser\""},"timestamp":1781726761408,"hypothesisId":"C-D"}
+{"sessionId":"0f4477","location":"server.ts:startup","message":"Registered procedures at server startup","data":{"procedures":["sayHi","logToServer","users.getUser"],"hasUsersGetUser":true,"topLevelKeys":["sayHi","logToServer","users"]},"timestamp":1781726801320,"hypothesisId":"A-B"}
+{"sessionId":"0f4477","location":"client.tsx:main","message":"Client calling users.getUser","data":{"url":"http://localhost:8000/trpc","path":"users.getUser"},"timestamp":1781726821643,"hypothesisId":"C-D"}
+{"sessionId":"0f4477","location":"client.tsx:error","message":"Client call failed","data":{"errorName":"TRPCClientError","errorMessage":"No procedure found on path \"users.getUser\""},"timestamp":1781726821699,"hypothesisId":"C-D"}
