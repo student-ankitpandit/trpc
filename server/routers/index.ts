@@ -1,4 +1,4 @@
-import { t } from "../trpc.ts"
+import { adminProcedure, t } from "../trpc.ts"
 import { userRouter } from "./users.ts"
 
 export const appRouter = t.router({
@@ -12,6 +12,10 @@ export const appRouter = t.router({
 	}).mutation(req => {
 		console.log(`Client says ${req.input}`)
 		return true
+	}),
+	secretData: adminProcedure.query(({ ctx }) =>  {
+		console.log(ctx.user)
+		return "top secret data"
 	}),
 	users: userRouter
 })
